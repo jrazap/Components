@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="./js.png" type="image/x-icon" />
+    <title>Javascript | Task-08 (Counter)</title>
+    <style>
+      body {
+        font-family: "Oswald", sans-serif;
+        background-color: #111;
+      }
+      .container {
+        color: #fff;
+        background-color: #000;
+        width: 30%;
+        padding: 40px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+        text-align: center;
+      }
+      #count {
+        background-color: #333;
+        padding: 2rem;
+        width: 4rem;
+        margin: 0 auto 2rem;
+        font-size: 3rem;
+      }
+      .btn {
+        padding: 10px 20px;
+        outline: none;
+        border: 1px solid;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 1rem;
+        color: #000;
+        margin: 0 1rem;
+      }
+      .btn:hover {
+        background-color: transparent;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div id="count">0</div>
+      <div class="btns">
+        <button class="btn inc"><i class="fa fa-plus"></i></button>
+        <button class="btn reset"><i class="fa fa-undo"></i></button>
+        <button class="btn dec"><i class="fa fa-minus"></i></button>
+      </div>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>

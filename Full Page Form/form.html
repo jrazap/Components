@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/form.css" />
+    <title>Rehan | رهان</title>
+  </head>
+  <body>
+    <div class="upform">
+      <div class="upform-main">
+        <form enctype="multipart/form-data">
+          <div class="q1 input-block">
+            <label for="q1"
+              ><span class="num">01.</span> اسم الجهة (المطور العقاري)</label
+            >
+            <div class="input-control">
+              <input type="text" name="q1" id="q1" />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q2 input-block">
+            <label for="q2"><span class="num">02.</span> رقم التواصل</label>
+            <div class="input-control">
+              <input type="tel" name="q2" id="q2" />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q3 input-block">
+            <label for="q3"><span class="num">03.</span> الإيميل</label>
+            <div class="input-control">
+              <input
+                type="email"
+                placeholder="name@example.com"
+                name="q3"
+                id="q3"
+              />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q4 input-block">
+            <label for="q4"
+              ><span class="num">04.</span> الموقع الالكرتوني (إن وجد)</label
+            >
+            <div class="input-control">
+              <input type="url" placeholder="//:https" name="q4" id="q4" />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+          <!-- Radio -->
+          <div class="q5 input-block">
+            <label for="q5"><span class="num">05.</span>نوع المشروع</label>
+            <div class="input-control">
+              <button type="button" class="btn_choose_sent bg_btn_chose_1">
+                <input
+                  type="radio"
+                  name="projectType"
+                  value="تطوير عقاري"
+                  checked
+                />
+                <span style="  text-align: right;">تطوير عقاري</span>
+              </button>
+              <button type="button" class="btn_choose_sent bg_btn_chose_1">
+                <input type="radio" name="projectType" value="بنية تحتية" />
+                  <span style=" text-align: right;"> بنية تحتية</span>
+              </button>
+              <button type="button" class="btn_choose_sent bg_btn_chose_2">
+                <input type="radio" name="projectType" value="مدر للدخل" />
+                <span style="  text-align: right;"> مدر للدخل</span>
+              </button>
+              <button type="button" class="btn_choose_sent bg_btn_chose_3">
+                <input type="radio" name="projectType" value="أخرى" />
+                <span style="  text-align: right;"> اخرى</span>
+              </button>
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q6 input-block">
+            <label for="q6"
+              ><span class="num">06.</span>الموقع (المدينة - الحي)</label
+            >
+            <div class="input-control">
+              <input
+                type="text"
+                placeholder="Type your answer here.."
+                name="q6"
+                id="q6"
+              />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q7 input-block">
+            <label for="q7"
+              ><span class="num">07.</span>المساحة الإجمالية للمشروع</label
+            >
+            <div class="input-control">
+              <input
+                type="text"
+                placeholder="Type your answer here.."
+                name="q7"
+                id="q7"
+              />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q8 input-block">
+            <label for="q8"
+              ><span class="num">08.</span>التكلفة التقديرية للمشروع</label
+            >
+            <div class="input-control">
+              <input
+                type="text"
+                placeholder="Type your answer here.."
+                name="q8"
+                id="q8"
+              />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q9 input-block">
+            <label for="q9"
+              ><span class="num">09.</span>شرح لفكرة المشروع</label
+            >
+            <div class="input-control">
+              <input
+                type="text"
+                placeholder="Type your answer here.."
+                name="q9"
+                id="q9"
+              />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q10 input-block">
+            <label for="q10"
+              ><span class="num">10.</span>هل يوجد تمويل بنكي لتطوير
+              المشروع</label
+            >
+            <div class="input-control">
+              <input
+                type="text"
+                placeholder="Type your answer here.."
+                name="q10"
+                id="q10"
+              />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q11 input-block">
+            <label for="q11"
+              ><span class="num">11.</span>موقع الأرض على قوقل ماب</label
+            >
+            <div class="input-control">
+              <input type="url" placeholder="https://" name="q11" id="q11" />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q12 input-block">
+            <label for="q12"><span class="num">12.</span>ملكية الأرض </label>
+            <div><h4>هل تم امتلاك الأرض ام لا؟</h4></div>
+            <div class="input-control">
+              <input
+                type="text"
+                placeholder="Type your answer here.."
+                name="q12"
+                id="q12"
+              />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q13 input-block">
+            <label for="q13"
+              ><span class="num">13.</span>مدة التنفيذ المتوقعة</label
+            >
+            <div class="input-control">
+              <input
+                type="text"
+                placeholder="Type your answer here.."
+                name="q13"
+                id="q13"
+              />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q14 input-block">
+            <label for="q14"
+              ><span class="num">14.</span>العوائد المتوقعة</label
+            >
+            <div class="input-control">
+              <input
+                type="text"
+                placeholder="Type your answer here.."
+                name="q14"
+                id="q14"
+              />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q15 input-block">
+            <label for="q15"
+              ><span class="num">15.</span>هل هناك دراسة جدوى للمشروع</label
+            >
+            <div class="input-control">
+              <input
+                type="text"
+                placeholder="Type your answer here.."
+                name="q15"
+                id="q15"
+              />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+          <!-- Upload -->
+          <div class="q16 input-block">
+            <label for="q16"
+              ><span class="num">16.</span>يرجى إرفاق دراسة الجدوى
+              للمشروع</label
+            >
+            <div class="input-control">
+              <div class="custom-file-upload">
+                <input type="file" class="form-control" id="feasibilityFile" name="feasibilityFile"/></input>
+              </div>
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+          <!-- Upload -->
+          <div class="q17 input-block">
+            <label for="q17"><span class="num">17.</span>مستندات المشروع</label>
+            <div><h4>الكروكي التنظيمي ، الصك</h4></div>
+            <div class="input-control">
+              <div class="custom-file-upload">
+                <input type="file" class="form-control" id="docs" name="docs"/></input>
+              </div>
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q18 input-block">
+            <label for="q18"
+              ><span class="num">18.</span>هل تتوفر التراخيص اللازمة (رخصة
+              البناء)</label
+            >
+            <div class="input-control">
+              <input
+                type="text"
+                placeholder="Type your answer here.."
+                name="q18"
+                id="q18"
+              />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q19 input-block">
+            <label for="q19"
+              ><span class="num">19.</span>ملخص المشاريع السابقة</label
+            >
+            <div>
+              <h4>
+                نبذة عن مشاريع المطور السابقة من حيث الحجم و النوع و المدن التي
+                تم التنفيذ فيها
+              </h4>
+            </div>
+            <div class="input-control">
+              <input
+                type="text"
+                placeholder="Type your answer here.."
+                name="q19"
+                id="q19"
+              />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+          <!-- Radio -->
+          <div class="q20 input-block">
+            <label for="q20"
+              ><span class="num">20.</span>حجم المشاريع التي تم العمل عليها من
+              قبل</label
+            >
+            <div class="input-control">
+              <button type="button" class="btn_choose_sent bg_btn_chose_1">
+                <input
+                  type="radio"
+                  name="projectVol"
+                  value="0 - 20 مليون"
+                  checked
+                />0 - 20 مليون
+              </button>
+              <button type="button" class="btn_choose_sent bg_btn_chose_1">
+                <input type="radio" name="projectVol" value="21 - 50 مليون" />21
+                - 50 مليون
+              </button>
+              <button type="button" class="btn_choose_sent bg_btn_chose_2">
+                <input
+                  type="radio"
+                  name="projectVol"
+                  value="51 - 120 مليون"
+                />51 - 120 مليون
+              </button>
+              <button type="button" class="btn_choose_sent bg_btn_chose_3">
+                <input
+                  type="radio"
+                  name="projectVol"
+                  value="121 - 250 مليون"
+                />121 - 250 مليون
+              </button>
+              <button type="button" class="btn_choose_sent bg_btn_chose_3">
+                <input
+                  type="radio"
+                  name="projectVol"
+                  value="اكبر من 250 مليون"
+                />اكبر من 250 مليون
+              </button>
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q21 input-block">
+            <label for="q21"
+              ><span class="num">21.</span>هل سبق التعامل او تأسيس صناديق عقارية
+              من قبل ؟</label
+            >
+            <div class="input-control">
+              <input
+                type="text"
+                placeholder="Type your answer here.."
+                name="q21"
+                id="q21"
+              />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q22 input-block">
+            <label for="q22"><span class="num">22.</span>عمولة المطور؟</label>
+            <div class="input-control">
+              <input
+                type="text"
+                placeholder="Type your answer here.."
+                name="q22"
+                id="q22"
+              />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q23 input-block">
+            <label for="q23"
+              ><span class="num">23.</span>اسماء كبار التنفيذيين و مسمياتهم
+              الوظيفية</label
+            >
+            <div class="input-control">
+              <input
+                type="text"
+                placeholder="Type your answer here.."
+                name="q23"
+                id="q23"
+              />
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+          <!-- Upload -->
+          <div class="q24 input-block">
+            <label for="q24"
+              ><span class="num">24.</span>يرجى إرفاق القوائم المالية لآخر ثلاث
+              سنوات</label
+            >
+            <div>
+              <h4>في حال كان عمر الجهة أقل من 3 سنوات يرجى إرفاق المتاح فقط</h4>
+            </div>
+            <div class="input-control">
+              <div class="custom-file-upload">
+                <input type="file" class="form-control" id="financialStatements" name="financialStatements"/></input>
+              </div>
+            </div>
+            <div
+              class="btn btn-submit"
+              onclick="scrollWin(0, window.innerHeight)"
+            >
+              OK <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="q25 input-block">
+            <label for="q25"
+              ><span class="num">25.</span>هل هناك تعثرات في مشاريع
+              سابقة؟</label
+            >
+            <div>
+              <h4>في حال وجود تعثرات يرجى ذكر اسم المشروع و اسباب التعثر</h4>
+            </div>
+            <div class="input-control">
+              <input
+                type="text"
+                placeholder="Type your answer here.."
+                name="q25"
+                id="q25"
+              />
+            </div>
+            <button type="submit" class="btn btn-submit">
+              OK <i class="fa-solid fa-check"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="controls">
+        <i
+          class="fa fa-angle-up scrollUp"
+          onclick="scrollWin(0, window.innerHeight / -1)"
+        ></i>
+        <i
+          class="fa fa-angle-down scrollDown"
+          onclick="scrollWin(0, window.innerHeight)"
+        ></i>
+      </div>
+    </div>
+    <script>
+      function scrollWin(x, y) {
+        window.scrollBy(x, y);
+      }
+    </script>
+  </body>
+</html>

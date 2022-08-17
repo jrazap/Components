@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "poppins", sans-serif;
+}
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  position: relative;
+  width: 280px;
+  height: 380px;
+  background: #040404;
+  box-shadow: 0 15px 18px rgba(179, 179, 179, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  z-index: 1;
+  font-size: 0.9rem;
+}
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  background: url(../img/01.png);
+  background-size: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+.layer {
+  position: absolute;
+  top: 21%;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  transition: 0.4s ease;
+  z-index: -1;
+  overflow: hidden;
+}
+.detailes {
+  color: #fff;
+  text-align: center;
+}
+.skills {
+  font-size: 1.5rem;
+}
+.skills i {
+  margin: 0 0.3rem;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+.fa-html5 {
+  color: #e34c26;
+}
+.fa-css3-alt {
+  color: #0098ff;
+}
+.fa-js {
+  color: #f0db4f;
+}
+.fa-github {
+  color: #333;
+}
+.fa-vuejs {
+  color: #41b883;
+}
+.btn a {
+  display: block;
+  text-decoration: none;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 35px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: 0.4s ease;
+}
+.container:hover .layer {
+  height: 100%;
+}
+.container:hover .detailes {
+  color: #040404;
+}
+.container:hover .btn a {
+  border-color: #040404;
+  color: #040404;
+}
+.container:hover .btn:hover a {
+  background-color: #040404;
+  color: #fff;
+}
+.container:hover .skills i {
+  opacity: 1;
+}

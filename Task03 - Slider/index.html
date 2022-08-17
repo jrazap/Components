@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/js.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <title>Javascript | Task-08 (Slider)</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+      :root {
+        --mainColor: #ffb32f;
+      }
+      ::selection {
+        background-color: var(--mainColor);
+        color: #333;
+      }
+      body {
+        font-family: 'Oswald', sans-serif;
+        background-color: #111;
+      }
+      .container {
+        color: #fff;
+        background-color: #000;
+        width: 30%;
+        padding: 40px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+        text-align: center;
+      }
+      .img-container {
+        position: relative;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background-color: var(--mainColor);
+        margin: auto;
+      }
+      #person-img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        position: absolute;
+        top: 5%;
+        left: -5%;
+      }
+      .img-container::after {
+        content: open-quote;
+        position: absolute;
+        top: 4%;
+        left: -6.5%;
+        font-size: 50px;
+        color: #000;
+        background-color: var(--mainColor);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      #author {
+        color: #fff;
+        letter-spacing: 1px;
+        font-size: 22px;
+        font-weight: bolder;
+        margin-bottom: 0;
+        font-family: 'Montserrat', sans-serif;
+      }
+      #job {
+        font-size: 17px;
+        color: var(--mainColor);
+        font-family: 'Montserrat', sans-serif;
+      }
+      #info {
+        color: #fff;
+        height: 100px;
+        font-weight: 300;
+        width: 80%;
+        margin: auto;
+      }
+      .btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .btn i {
+        color: var(--mainColor);
+        font-size: 40px;
+      }
+      .prev-btn{
+          position: absolute;
+          top: 50%;
+          left: 2rem;
+      }
+      .next-btn{
+          position: absolute;
+          top: 50%;
+          right: 2rem;
+      }
+      .random-btn {
+        background-color: transparent;
+        cursor: pointer;
+        border: 1px solid #fff;
+        color: var(--mainColor);
+        border-radius: 10px;
+        padding: 10px 15px;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+      .random-btn:hover{
+        background-color: var(--mainColor);
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="img-container">
+        <img id="person-img" src="./img/pic1.png" alt="" />
+      </div>
+      <h4 id="author">NAME</h4>
+      <p id="job">JOB</p>
+      <p id="info">INFO</p>
+      <div class="btns-container">
+        <span class="btn prev-btn">
+          <i class="fa fa-chevron-left"></i>
+        </span>
+        <span class="btn next-btn">
+          <i class="fa fa-chevron-right"></i>
+        </span>
+      </div>
+      <button class="random-btn">Random</button>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>

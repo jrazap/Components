@@ -1,0 +1,56 @@
+.circle-container {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  padding: 0;
+  list-style: none;
+  margin: 5em auto 0;
+  border: solid 5px tomato;
+}
+.circle-container > * {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -3em;
+  width: 6em;
+  height: 6em;
+}
+.circle-container > *:nth-of-type(1) {
+  transform: rotate(0deg) translate(12.5rem) rotate(0deg);
+}
+.circle-container > *:nth-of-type(2) {
+  transform: rotate(45deg) translate(12.5rem) rotate(-45deg);
+}
+.circle-container > *:nth-of-type(3) {
+  transform: rotate(90deg) translate(12.5rem) rotate(-90deg);
+}
+.circle-container > *:nth-of-type(4) {
+  transform: rotate(135deg) translate(12.5rem) rotate(-135deg);
+}
+.circle-container > *:nth-of-type(5) {
+  transform: rotate(180deg) translate(12.5rem) rotate(-180deg);
+}
+.circle-container > *:nth-of-type(6) {
+  transform: rotate(225deg) translate(12.5rem) rotate(-225deg);
+}
+.circle-container > *:nth-of-type(7) {
+  transform: rotate(270deg) translate(12.5rem) rotate(-270deg);
+}
+.circle-container > *:nth-of-type(8) {
+  transform: rotate(315deg) translate(12.5rem) rotate(-315deg);
+}
+.circle-container img {
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  border: solid 5px tomato;
+  transition: 0.15s;
+}
+.circle-container img:hover {
+  filter: grayscale(0);
+}
+
+/*# sourceMappingURL=main.css.map */

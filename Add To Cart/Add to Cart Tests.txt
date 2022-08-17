@@ -1,0 +1,56 @@
+Ref:- https://www.aurigait.com/blog/basic-tests-for-the-shopping-cart-and-checkout-flow-in-a-e-commerce/
+    - https://khyatisehgal.wordpress.com/2017/02/16/functional-test-cases-of-shopping-cart/
+
+Most E-commerce Websites share a general common theme and structure in which the shopping cart and checkout flow are the most important part.
+
+Below are some basic test scenarios related to the shopping cart and checkout pipeline which needs to be covered before release.
+Shopping Cart:-
+
+- Add one item to the cart and verify.
+- Increase the quantity of the item from the cart and verify.
+- Add the same item multiple times and verify.
+- Add multiple items of different types and verify.
+- Remove some items from the cart and verify.
+- Remove all items from the cart and then verify.
+- Click on an item in the cart and verify that the user is redirected to the product detail page.
+- Check that the price of the cart is discounted when we apply a valid coupon.
+- Check that the price of the cart is not discounted when we apply an invalid coupon.
+- Add item(s) to the cart, close the browser and reopen the same site.
+- Add item(s) to the cart, close the browser and reopen the same site.
+- Verify the product QTY field when the product is out of stock.
+- Verify that the user is able to add a text note for all products.
+- Verify that the user is able to add any or all products to his wishlist by clicking on the wishlist link.
+- Verify that the user is able to mark his order as a gift.
+- Verify that the user is able to add any a gift message.
+- Verify that the user is redirected to the checkout page after clicking on the checkout button.
+- Verify the cart total when the exclusive tax is enabled from the admin end.
+- Verify the cart total when the inclusive tax is enabled from the admin end.
+Checkout flow:-
+
+- Ensure that user can access the Checkout Page only after adding the product to the cart.
+- Ensure that Checkout Address Page consists of all the details of the product such as Name, Quantity, Amount, etc.
+- Ensure that only registered users are allowed to access the Checkout Address Page.
+- Ensure that Name, Street Address, City, State, Country, Postal code is the mandatory field in the Checkout Address page (Shipping Address).
+- Ensure that Name, Street Address, City, State, Country, Postal code is the mandatory field in the Checkout Address page (Billing Address).
+- Ensure that error message is displayed when the user enters invalid input in all the mandatory field in the checkout address page.
+- Ensure that Back to cart link is available so that user can modify the cart content if needed.
+- Ensure that user is redirected to Checkout payment page only after entering valid mandatory details in the checkout Address page.
+- Ensure that error message is displayed when the user leaves any one of the mandatory fields in the checkout Address page.
+- Ensure that Next Button and Cancel Button are available in the Checkout Address Page.
+- Check that a user is able to apply a valid coupon.
+- Check order price when the coupon is applied.
+- Verify the error message for the invalid coupon.
+- Check that user is able to make his order as a gift.
+- Ensure that the user is able to add any gift message.
+- Check order price when gift and wrapping charges are applicable.
+- Check the shipping price.
+- Check the shipping price tax.
+- Check the payment options.
+- Ensure that Name on Card, Card Number, Expiration date, CWW2 are mandatory fields in the Payment Page.
+- Ensure that error message is displayed when the user enters invalid input in all the mandatory field on the Payment Page.
+- Ensure that error message is displayed when the user leaves any one of the mandatory fields in the Payment Page.
+- Ensure that the user is redirected to the third party (Vender) page.
+- Ensure that the user is redirected to the third party (PayPal) page if he is going to pay through a third party payment gateway (PayPal).
+- Place an order where order total price is Zero (0).
+- Place an order where the total discount is more than the entire order.
+- Place an order by double clicking on the Submit Button.

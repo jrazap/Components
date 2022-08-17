@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="./img/js.png" type="image/x-icon" />
+    <title>Javascript | Task-09 (Taps)</title>
+    <style>
+      body {
+        font-family: "Oswald", sans-serif;
+        background-color: #000;
+      }
+      .container {
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+        padding: 40px;
+      }
+      .title {
+        margin-bottom: 2rem;
+      }
+      .title h2 {
+        font-size: 50px;
+        text-align: center;
+      }
+      .title p {
+        text-align: center;
+        word-spacing: 2px;
+        font-size: 18px;
+        margin: 0;
+      }
+      .about-img img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 1rem;
+      }
+      .btns {
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+      }
+      .btn {
+        color: #000;
+        background-color: #fff;
+        padding: 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+      .active {
+        color: #fff;
+        background-color: #111;
+      }
+      .btn:hover:not(.active) {
+        color: #fff;
+        background-color: #333;
+      }
+      .content {
+        display: none;
+        padding: 20px;
+        background-color: #111;
+      }
+      .content h4 {
+        font-size: 25px;
+      }
+      .content p {
+        font-size: 14px;
+        padding-bottom: 10px;
+      }
+      .content.active-tap {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="title">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, modi!
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="about-center">
+          <div class="about-img">
+            <img src="./img/pic2.png" alt="" />
+          </div>
+        </div>
+        <div class="about">
+          <div class="btns">
+            <button class="btn active" data-tap="history">History</button>
+            <button class="btn" data-tap="vision">Vision</button>
+            <button class="btn" data-tap="goals">Goals</button>
+          </div>
+          <div class="about-content">
+            <div class="content active-tap" id="history">
+              <h4>History</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Veritatis, asperiores. Nobis expedita optio sunt asperiores
+                voluptatem impedit fugiat rem iure totam dolores? Non illo
+                dolore voluptatem odio laborum id commodi molestias numquam,
+                consequatur quam quisquam quo maxime, similique quibusdam quasi
+                quis qui consectetur enim labore! Expedita dolore laborum quo
+                quod.
+              </p>
+            </div>
+            <div class="content" id="vision">
+              <h4>Vision</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                incidunt! Neque maxime ipsam repellendus officiis eius est eos
+                optio sit, nam nobis necessitatibus, deleniti, dicta magni!
+                Repellendus cupiditate consectetur quo quae asperiores quos
+                aperiam. Repudiandae consectetur provident hic, commodi delectus
+                repellendus deserunt quisquam, alias vel cum assumenda
+                blanditiis quibusdam numquam.
+              </p>
+            </div>
+            <div class="content" id="goals">
+              <h4>Goals</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                necessitatibus assumenda earum, placeat laudantium inventore
+                veniam voluptatum aspernatur nulla, in id! Assumenda nesciunt,
+                eos nobis sed excepturi dolore laboriosam reprehenderit
+                quibusdam eum voluptates in tenetur magnam neque harum? Nihil
+                amet tempora dicta maiores tempore? Corporis praesentium
+                officiis veritatis porro eius.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>

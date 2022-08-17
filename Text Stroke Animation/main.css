@@ -1,0 +1,21 @@
+svg{
+    background: #fff;
+}
+svg text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 5rem;
+    stroke-width: 3px;
+    fill: transparent;
+    stroke: #ff3b63;
+    letter-spacing: 2px;
+    animation: effect 6s infinite alternate;
+}
+@keyframes effect{
+    0%{
+        stroke-dasharray: 0 70%;
+    }
+    100%{
+        stroke-dasharray: 50% 0;
+        stroke-dashoffset: 10%;
+    }
+}

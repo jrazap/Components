@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap");
+/* PAGE & INPUT STYLING */
+:root {
+  --btn-color: #0546af;
+}
+::placeholder {
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #777;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in;
+}
+body {
+  background: #e1e1e1;
+  color: #000;
+  font-family: "Cairo", sans-serif;
+  overflow: hidden;
+}
+.num {
+  color: var(--btn-color);
+  font-weight: 800;
+}
+.btn {
+  border: none;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 0.2rem;
+  color: #fff;
+  background-color: var(--btn-color);
+  align-items: flex-start;
+}
+.m-btn {
+  border: 1px solid #808080;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 20px;
+  position: relative;
+  text-align: left;
+  border-radius: 3px;
+  -webkit-transition: background 600ms ease, color 600ms ease;
+  transition: background 600ms ease, color 600ms ease;
+}
+.btn span {
+  border: 1px solid #808080;
+  display: inline-block;
+  padding: 1px 6px;
+  font-size: 12px;
+  border-radius: 5px;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: -5px;
+}
+/* ENDS */
+
+/* UPFORM STYLE STARTS*/
+.upform .controls {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+.upform .controls .fa {
+  color: #fff;
+  background-color: var(--btn-color);
+  padding: .4rem .5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.upform input:not([type='file']):focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  border-color: var(--btn-color) !important;
+}
+.upform input:not([type='file']),
+select,
+textarea {
+  background-color: #e1e1e1 !important;
+  color: #000;
+}
+
+.upform .upform-main .input-block {
+  padding-block: 30px;
+  cursor: default;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.upform .upform-main .input-block label {
+  display: block;
+  font-size: 2rem;
+  line-height: 30px;
+}
+.upform .upform-main .input-block input:not([type='file']) {
+  margin: 20px 0;
+}
+.upform .upform-main .input-block h4 {
+  margin-block: 1rem;
+  font-weight: 300;
+}
+.upform .upform-main .input-block .input-control input:not([type='file']) {
+  border: none;
+  outline-width: 0;
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
+.upform .upform-main .q5.input-block input:not([type='file']) {
+  margin: 0 12px ;
+}
+
+.upform .upform-main .q5.input-block .input-control input:not([type='file']){
+  width: 2rem;
+  height: 1.5rem;
+  position: unset;
+}
+
+.upform .upform-main .q5 span{
+  width: 89%;
+  line-height: 1.6;
+}
+
+.upform .upform-main .q5 .btn_choose_sent {
+  padding: 18px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.btn_choose_sent input:checked {
+  -webkit-transition: background-position 0.2s 0.15s cubic-bezier(0, 0, 0.2, 1),
+    -webkit-transform 0.25s cubic-bezier(0, 0, 0.2, 1);
+}
+.btn_choose_sent input:active {
+  -webkit-transform: scale(1.5);
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);
+}
+.btn_choose_sent input,
+.btn_choose_sent input:active {
+  background-position: 0 24px;
+}
+.btn_choose_sent input:checked {
+  background-position: 0 0;
+}
+.btn_choose_sent input:checked ~ input,
+.btn_choose_sent input:checked ~ input:active {
+  background-position: 0 -24px;
+}
+.btn_choose_sent {
+  background: #359dcc;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(125, 147, 178, 0.3);
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 10px;
+  padding: 16px 20px 16px 38px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  margin: 30px;
+  transition: all 0.3s;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  min-inline-size: 10rem;
+  inline-size: -webkit-fill-available;
+}
+.btn_choose_sent input {
+  position: absolute;
+  right: 60px;
+  z-index: 99;
+  top: -10px;
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+}
+.custom-file-upload{
+  background: inherit;
+  border: none;
+  color: #000;
+  padding-block: 5rem;
+  width: 5rem;
+}
+.custom-file-upload input{
+  inline-size: 100%;
+}
+.custom-file-upload input::-webkit-file-upload-button{
+  visibility: hidden;
+}
+.custom-file-upload input::before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f0ee";
+  color: #000;
+  display: block;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 3rem;
+
+}
+/* UPFORM STYLE ENDS*/
