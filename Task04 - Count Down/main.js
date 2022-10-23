@@ -2,12 +2,7 @@ let persons = {
   mohamed: {
     PName: "Mohamed",
     PImg: "./img/mohamed.jpg",
-    PDate: "December 18, 2021 00:00:00",
-  },
-  ahmed:{
-    PName: "Ahmed",
-    PImg: "./img/ahmed.jpg",
-    PDate: "Juli 7, 2022 00:00:00",
+    PDate: "December 18, 2022 00:00:00",
   },
 };
 
@@ -87,7 +82,7 @@ function getRemain() {
     clearInterval(cutDown);
     deadline.style.display = "initial";
     
-    deadline.innerHTML = `<h1>HAPPY BIRTHDAY To ME.</h1>`;
+    deadline.innerHTML = `<h1>HAPPY BIRTHDAY TO YOU.</h1>`;
     deadline.innerHTML += `<center><img src="./img/bday.gif" width="500px" height="300px"/></center>`;
   }
 }
